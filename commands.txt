@@ -1,0 +1,33 @@
+Git
+
+create repository
+git init
+
+check status of repository
+git status
+
+stage changes:
+git add filename
+git add .
+
+commit changes:
+git commit -m "message describing changes"
+
+check the log of commits
+git log
+
+unstage changes
+git reset
+
+Scenario 1: 
+You make changes and save them on your local computer. You decide you want to revert them back to a previous version. You can reset --hard. This will reset the respository to the most recent commit. 
+git reset --hard
+
+Scenario 2: 
+You make changes and save them on your local computer. You commit these changes to the repository. You decide you want to revert them back to the previous commit. You can revert. This will undo the most recent commit and you will be back at the second to last commit.
+ 
+git revert hash_of_most_recent_commit
+
+
+
+
